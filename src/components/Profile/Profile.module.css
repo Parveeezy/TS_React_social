@@ -1,0 +1,16 @@
+.content {
+    grid-area: content;
+    background-color: coral;
+}
+
+.content > div > img {
+    max-width: 1000px;
+}
+
+.posts {
+
+}
+
+.item {
+    color: greenyellow;
+}
