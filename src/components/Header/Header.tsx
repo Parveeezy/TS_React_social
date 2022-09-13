@@ -1,15 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Header() {
-
+const Header = () => {
     return (
-        <div>
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#">Messages</a>
-        </div>
+        <header className='header'>
+            <img src='https://seeklogo.com/images/S/svg-logo-A7D0801A11-seeklogo.com.png' alt=''/>
+        </header>
     )
-
 }
 
 export default Header;
