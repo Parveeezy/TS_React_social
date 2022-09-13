@@ -3,14 +3,6 @@
     background-color: coral;
 }
 
-.content > div > img {
+.contentBgImg {
     max-width: 1000px;
-}
-
-.posts {
-
-}
-
-.item {
-    color: greenyellow;
 }
