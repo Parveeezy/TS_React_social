@@ -1,3 +1,7 @@
+body{
+    background-color: #544e4e;
+}
+
 .app-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -8,4 +12,9 @@
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
     gap: 3px;
+}
+
+.app-wrapper-content{
+    grid-area: content;
+    background-color: coral;
 }
