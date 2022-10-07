@@ -3,6 +3,12 @@ import Post from "./Posts/Post";
 import s from './MyPosts.module.css'
 
 const MyPosts = () => {
+
+    let postsData = [
+        {id: 1, message: 'Hello, how it s going?', likesCount: 15},
+        {id: 2, message: 'Hop Hey La la ley', likesCount: 2},
+
+    ]
     return (
         <div className={s.content}>
             <h3>My posts</h3>
@@ -18,8 +24,7 @@ const MyPosts = () => {
                 New posts
             </div>
             <div>
-                <Post message='Hello, how it s going?' likesCount={15}/>
-                <Post message='Hop Hey La la ley' likesCount={10}/>
+                <Post postsData={postsData}/>
             </div>
         </div>
     );
