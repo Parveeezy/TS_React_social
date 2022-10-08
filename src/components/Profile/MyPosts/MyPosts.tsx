@@ -1,14 +1,16 @@
 import React from 'react';
 import Post from "./Posts/Post";
 import s from './MyPosts.module.css'
+import {ProfilePageType} from "../../../redux/state";
 
-const MyPosts = () => {
+type MyPostsPropsType = {
+    profilePagePosts: ProfilePageType
+}
 
-    let postsData = [
-        {id: 1, message: 'Hello, how it s going?', likesCount: 15},
-        {id: 2, message: 'Hop Hey La la ley', likesCount: 2},
+const MyPosts = (props: MyPostsPropsType) => {
 
-    ]
+    let post = props.profilePagePosts.posts
+
     return (
         <div className={s.content}>
             <h3>My posts</h3>
@@ -24,7 +26,7 @@ const MyPosts = () => {
                 New posts
             </div>
             <div>
-                <Post postsData={postsData}/>
+                <Post posts={post}/>
             </div>
         </div>
     );

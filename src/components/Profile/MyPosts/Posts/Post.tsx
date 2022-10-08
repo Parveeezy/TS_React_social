@@ -1,18 +1,14 @@
 import React from 'react';
 import s from './Post.module.css';
+import {PostType} from "../../../../redux/state";
 
-type postsDataPropsType = {
-    id: number
-    message: string
-    likesCount: number
-}
 type PostPropsType = {
-    postsData: postsDataPropsType[]
+    posts: PostType[]
 }
 
 const Post = (props: PostPropsType) => {
 
-    const postsElements = props.postsData.map(p => {
+    const postsElements = props.posts.map(p => {
         return (
             <div key={p.id} className={s.item}>
                 <img className={s.postUserImg}
